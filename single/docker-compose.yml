@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mft:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "7000-7001:8000-8001"
+      - "7005-7006:8005-8006"
+      - "7009-7010:8009-8010"
+      - "7443:443"
+      - "7021:21"
+      - "7990:990"
+      - "7022:22"
+      # Port range used for GoFast transfers, must match range set in service configuration  to work properly.
+      - "32001-32100:32001-32100"
+      # Port range used for passive FTP transfers, must match range set in service configuration  to work properly.
+      - "32101-32200:32101-32200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "32201-32300:32201-32300"
+    volumes:
+      - userdata:/usr/local/HelpSystems/GoAnywhere/userdata/
+      - configdir:/usr/local/HelpSystems/GoAnywhere/config/
+volumes:
+  configdir:
+  userdata:

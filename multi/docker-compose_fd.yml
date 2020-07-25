@@ -1,0 +1,105 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mft_mysql
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=changeit
+  mft:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft-1
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "8000-8001:8000-8001"
+      - "8005-8006:8005-8006"
+      - "8009-8010:8009-8010"
+      - "8443:8443"
+      - "8021:8021"
+      - "8990:8990"
+      - "8022:8022"
+      # Port range used for GoFast transfers, must match range set in service configuration to work properly.
+      - "32001-32100:32001-32100"
+      # Port range used for passive FTP transfers, must match range set in service configuration to work properly.
+      - "32101-32200:32101-32200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "32201-32300:32201-32300"
+    volumes:
+      - cluster_dir:/opt/HelpSystems/GoAnywhere/cluster
+      - userdata1:/opt/HelpSystems/GoAnywhere/userdata/
+      - configdir1:/etc/HelpSystems/GoAnywhere/config/
+      - tomcatserver1:/etc/HelpSystems/GoAnywhere/tomcat/conf/server.xml
+      - tomcatlogsdir1:/opt/HelpSystems/GoAnywhere/tomcat/logs/
+      - ghttpsrootcustomdir1:/opt/HelpSystems/GoAnywhere/ghttpsroot/custom/
+  mft2:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft-2
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "9000-9001:8000-8001"
+      - "9005-9006:8005-8006"
+      - "9009-9010:8009-8010"
+      - "9443:8443"
+      - "9021:8021"
+      - "9990:8990"
+      - "9022:8022"
+      # Port range used for GoFast transfers, must match range set in service configuration to work properly.
+      - "42001-42100:42001-42100"
+      # Port range used for passive FTP transfers, must match range set in service configuration to work properly.
+      - "42101-42200:42101-42200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "42201-42300:42201-42300"
+    volumes:
+      - cluster_dir:/opt/HelpSystems/GoAnywhere/cluster
+      - userdata2:/opt/HelpSystems/GoAnywhere/userdata/
+      - configdir2:/etc/HelpSystems/GoAnywhere/config/
+      - tomcatserver2:/etc/HelpSystems/GoAnywhere/tomcat/conf/server.xml
+      - tomcatlogsdir2:/opt/HelpSystems/GoAnywhere/tomcat/logs/
+      - ghttpsrootcustomdir2:/opt/HelpSystems/GoAnywhere/ghttpsroot/custom/
+  mft3:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft-3
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "7000-7001:8000-8001"
+      - "7005-7006:8005-8006"
+      - "7009-7010:8009-8010"
+      - "7443:8443"
+      - "7021:8021"
+      - "7990:8990"
+      - "7022:8022"
+      # Port range used for GoFast transfers, must match range set in service configuration to work properly.
+      - "22001-22100:22001-22100"
+      # Port range used for passive FTP transfers, must match range set in service configuration to work properly.
+      - "22101-22200:22101-22200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "22201-22300:22201-22300"
+    volumes:
+      - cluster_dir:/opt/HelpSystems/GoAnywhere/cluster
+      - userdata3:/opt/HelpSystems/GoAnywhere/userdata/
+      - configdir3:/etc/HelpSystems/GoAnywhere/config/
+      - tomcatserver3:/etc/HelpSystems/GoAnywhere/tomcat/conf/server.xml
+      - tomcatlogsdir3:/opt/HelpSystems/GoAnywhere/tomcat/logs/
+      - ghttpsrootcustomdir3:/opt/HelpSystems/GoAnywhere/ghttpsroot/custom/
+volumes:
+  cluster_dir:
+  userdata1:
+  configdir1:
+  tomcatserver1:
+  tomcatlogsdir1:
+  ghttpsrootcustomdir1:
+  userdata2:
+  configdir2:
+  tomcatserver2:
+  tomcatlogsdir2:
+  ghttpsrootcustomdir2:
+  userdata3:
+  configdir3:
+  tomcatserver3:
+  tomcatlogsdir3:
+  ghttpsrootcustomdir3:

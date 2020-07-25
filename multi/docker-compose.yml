@@ -1,0 +1,87 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mft_mysql
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=changeit
+  mft:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft-1
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "8000-8001:8000-8001"
+      - "8005-8006:8005-8006"
+      - "8009-8010:8009-8010"
+      - "8443:443"
+      - "8021:21"
+      - "8990:990"
+      - "8022:22"
+      # Port range used for GoFast transfers, must match range set in service configuration  to work properly.
+      - "32001-32100:32001-32100"
+      # Port range used for passive FTP transfers, must match range set in service configuration  to work properly.
+      - "32101-32200:32101-32200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "32201-32300:32201-32300"
+    volumes:
+      - cluster_dir:/usr/local/HelpSystems/GoAnywhere/cluster
+      - userdata1:/usr/local/HelpSystems/GoAnywhere/userdata/
+      - configdir1:/usr/local/HelpSystems/GoAnywhere/config/
+  mft2:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft-2
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "9000-9001:8000-8001"
+      - "9005-9006:8005-8006"
+      - "9009-9010:8009-8010"
+      - "9443:443"
+      - "9021:21"
+      - "9990:990"
+      - "9022:22"
+      # Port range used for GoFast transfers, must match range set in service configuration  to work properly.
+      - "42001-42100:42001-42100"
+      # Port range used for passive FTP transfers, must match range set in service configuration  to work properly.
+      - "42101-42200:42101-42200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "42201-42300:42201-42300""
+    volumes:
+      - cluster_dir:/usr/local/HelpSystems/GoAnywhere/cluster
+      - userdata2:/usr/local/HelpSystems/GoAnywhere/userdata/
+      - configdir2:/usr/local/HelpSystems/GoAnywhere/config/
+  mft3:
+    image: helpsystems/goanywhere-mft:latest
+    container_name: goanywhere-mft-3
+    restart: unless-stopped
+    ports:
+      # Standard ports used by GoAnywhere MFT
+      - "7000-7001:8000-8001"
+      - "7005-7006:8005-8006"
+      - "7009-7010:8009-8010"
+      - "7443:443"
+      - "7021:21"
+      - "7990:990"
+      - "7022:22"
+      # Port range used for GoFast transfers, must match range set in service configuration  to work properly.
+      - "22001-22100:22001-22100"
+      # Port range used for passive FTP transfers, must match range set in service configuration  to work properly.
+      - "22101-22200:22101-22200"
+      # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
+      - "22201-22300:22201-22300"
+    volumes:
+      - cluster_dir:/usr/local/HelpSystems/GoAnywhere/cluster
+      - userdata3:/usr/local/HelpSystems/GoAnywhere/userdata/
+      - configdir3:/usr/local/HelpSystems/GoAnywhere/config/
+volumes:
+  cluster_dir:
+  userdata1:
+  configdir1:
+  userdata2:
+  configdir2:
+  userdata3:
+  configdir3:
