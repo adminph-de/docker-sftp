@@ -6,13 +6,13 @@ services:
     restart: unless-stopped
     ports:
       # Standard ports used by GoAnywhere MFT
-      - "7000-7001:8000-8001"
-      - "7005-7006:8005-8006"
-      - "7009-7010:8009-8010"
-      - "7443:443"
-      - "7021:21"
-      - "7990:990"
-      - "7022:22"
+      - "9000-9001:8000-8001"
+      - "9005-9006:8005-8006"
+      - "9009-9010:8009-8010"
+      - "9443:443"
+      - "9021:21"
+      - "9990:990"
+      - "9022:22"
       # Port range used for GoFast transfers, must match range set in service configuration  to work properly.
       - "32001-32100:32001-32100"
       # Port range used for passive FTP transfers, must match range set in service configuration  to work properly.
@@ -20,8 +20,26 @@ services:
       # Port range used for passive FTPS transfers, must match range set in service configuration to work properly.
       - "32201-32300:32201-32300"
     volumes:
-      - userdata:/usr/local/HelpSystems/GoAnywhere/userdata/
-      - configdir:/usr/local/HelpSystems/GoAnywhere/config/
+      - userdata:/opt/HelpSystems/GoAnywhere/userdata/
+      - configdir:/opt/HelpSystems/GoAnywhere/config/
+
+  sql:
+    image: mcr.microsoft.com/mssql/server:2019-CU5-ubuntu-16.04
+    container_name: goanywhere-sql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+      - SA_PASSWORD=MyP@ssw0rd,2019
+    #command: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'MyP@ssw0rd,2019' -i /mnt/script.sql
+    ports:
+      - 1433:1433
+    volumes:
+      - sqldata:/var/opt/sql/data
+      - sqllog:/var/opt/sql/log
+      - ${PWD}/script.sql:/mnt/script.sql
+
 volumes:
   configdir:
   userdata:
+  sqldata:
+  sqllog:

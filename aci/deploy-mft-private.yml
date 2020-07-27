@@ -1,0 +1,91 @@
+apiVersion: '2018-10-01'
+location: westus2
+name: goanywhere-mft-private
+properties:
+  containers:
+  - name: goanywhere-mft-private
+    properties:
+      environmentVariables: []
+      image: helpsystems/goanywhere-mft:latest
+      ports:
+        - protocol: tcp
+          port: 8000
+        - protocol: tcp
+          port: 8005
+        - protocol: tcp
+          port: 8009
+        - protocol: tcp
+          port: 8001
+        - protocol: tcp
+          port: 8006
+        - protocol: tcp
+          port: 8010
+        - protocol: tcp
+          port: 443
+        - protocol: tcp
+          port: 21
+        - protocol: tcp
+          port: 990
+        - protocol: tcp
+          port: 22
+        #- protocol: tcp
+        #  port: "32001-32100"
+        #- protocol: tcp
+        #  port: "32101-32200"
+        #- protocol: tcp
+        #  port: "32201-32300"
+      resources:
+        requests:
+          cpu: 4.0
+          memoryInGB: 16
+      volumeMounts:
+      - mountPath: /opt/HelpSystems/GoAnywhere/config/
+        name: config
+      - mountPath: /opt/HelpSystems/GoAnywhere/userdata/
+        name: userdata
+  osType: Linux
+  restartPolicy: Always
+  ipAddress:
+    type: Private
+    ports:
+      - protocol: tcp
+        port: 8000
+      - protocol: tcp
+        port: 8005
+      - protocol: tcp
+        port: 8009
+      - protocol: tcp
+        port: 8001
+      - protocol: tcp
+        port: 8006
+      - protocol: tcp
+        port: 8010
+      - protocol: tcp
+        port: 443
+      - protocol: tcp
+        port: 21
+      - protocol: tcp
+        port: 990
+      - protocol: tcp
+        port: 22
+      #- protocol: tcp
+      #  port: "32001-32100"
+      #- protocol: tcp
+      #  port: "32101-32200"
+      #- protocol: tcp
+      #  port: "32201-32300"
+  NetworkProfile:
+    id: /subscriptions/00bb5d82-5e23-4972-ae4f-3d9b0afa73b2/resourceGroups/sea-core-network-p/providers/Microsoft.Network/networkProfiles/aci-network-profile-azus2-spoke-1-vnet-p-aci-backend__10_3_20_128__27
+  volumes:
+  - name: config
+    azureFile:
+      sharename: config
+      storageAccountName: sftprepo0001
+      storageAccountKey: eT9CqhRtyLGxxWjuZ8F5R4E+vZw0gRiguPlyLRudwZC4slGAaX0aHmRUmeyeC+ThucMwn1ktTgrQHcfbfCNrLg==
+  - name: userdata
+    azureFile:
+      sharename: userdata
+      storageAccountName: sftprepo0001
+      storageAccountKey: eT9CqhRtyLGxxWjuZ8F5R4E+vZw0gRiguPlyLRudwZC4slGAaX0aHmRUmeyeC+ThucMwn1ktTgrQHcfbfCNrLg==
+tags: null
+type: Microsoft.ContainerInstance/containerGroups

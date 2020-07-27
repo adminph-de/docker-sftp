@@ -1,0 +1,1277 @@
+apiVersion: '2018-10-01'
+location: westus2
+name: goanywhere-mft-public
+properties:
+  containers:
+  - name: goanywhere-mft-public
+    properties:
+      environmentVariables: []
+      image: helpsystems/goanywhere-mft:latest
+      ports:
+      - protocol: tcp
+        port: 8000
+      - protocol: tcp
+        port: 8005
+      - protocol: tcp
+        port: 8009
+      - protocol: tcp
+        port: 8001
+      - protocol: tcp
+        port: 8006
+      - protocol: tcp
+        port: 8010
+      - protocol: tcp
+        port: 443
+      - protocol: tcp
+        port: 21
+      - protocol: tcp
+        port: 990
+      - protocol: tcp
+        port: 22
+      - protocol: tcp
+        port: 32001
+      - protocol: tcp
+        port: 32002
+      - protocol: tcp
+        port: 32003
+      - protocol: tcp
+        port: 32004
+      - protocol: tcp
+        port: 32005
+      - protocol: tcp
+        port: 32006
+      - protocol: tcp
+        port: 32007
+      - protocol: tcp
+        port: 32008
+      - protocol: tcp
+        port: 32009
+      - protocol: tcp
+        port: 32010
+      - protocol: tcp
+        port: 32011
+      - protocol: tcp
+        port: 32012
+      - protocol: tcp
+        port: 32013
+      - protocol: tcp
+        port: 32014
+      - protocol: tcp
+        port: 32015
+      - protocol: tcp
+        port: 32016
+      - protocol: tcp
+        port: 32017
+      - protocol: tcp
+        port: 32018
+      - protocol: tcp
+        port: 32019
+      - protocol: tcp
+        port: 32020
+      - protocol: tcp
+        port: 32021
+      - protocol: tcp
+        port: 32022
+      - protocol: tcp
+        port: 32023
+      - protocol: tcp
+        port: 32024
+      - protocol: tcp
+        port: 32025
+      - protocol: tcp
+        port: 32026
+      - protocol: tcp
+        port: 32027
+      - protocol: tcp
+        port: 32028
+      - protocol: tcp
+        port: 32029
+      - protocol: tcp
+        port: 32030
+      - protocol: tcp
+        port: 32031
+      - protocol: tcp
+        port: 32032
+      - protocol: tcp
+        port: 32033
+      - protocol: tcp
+        port: 32034
+      - protocol: tcp
+        port: 32035
+      - protocol: tcp
+        port: 32036
+      - protocol: tcp
+        port: 32037
+      - protocol: tcp
+        port: 32038
+      - protocol: tcp
+        port: 32039
+      - protocol: tcp
+        port: 32040
+      - protocol: tcp
+        port: 32041
+      - protocol: tcp
+        port: 32042
+      - protocol: tcp
+        port: 32043
+      - protocol: tcp
+        port: 32044
+      - protocol: tcp
+        port: 32045
+      - protocol: tcp
+        port: 32046
+      - protocol: tcp
+        port: 32047
+      - protocol: tcp
+        port: 32048
+      - protocol: tcp
+        port: 32049
+      - protocol: tcp
+        port: 32050
+      - protocol: tcp
+        port: 32051
+      - protocol: tcp
+        port: 32052
+      - protocol: tcp
+        port: 32053
+      - protocol: tcp
+        port: 32054
+      - protocol: tcp
+        port: 32055
+      - protocol: tcp
+        port: 32056
+      - protocol: tcp
+        port: 32057
+      - protocol: tcp
+        port: 32058
+      - protocol: tcp
+        port: 32059
+      - protocol: tcp
+        port: 32060
+      - protocol: tcp
+        port: 32061
+      - protocol: tcp
+        port: 32062
+      - protocol: tcp
+        port: 32063
+      - protocol: tcp
+        port: 32064
+      - protocol: tcp
+        port: 32065
+      - protocol: tcp
+        port: 32066
+      - protocol: tcp
+        port: 32067
+      - protocol: tcp
+        port: 32068
+      - protocol: tcp
+        port: 32069
+      - protocol: tcp
+        port: 32070
+      - protocol: tcp
+        port: 32071
+      - protocol: tcp
+        port: 32072
+      - protocol: tcp
+        port: 32073
+      - protocol: tcp
+        port: 32074
+      - protocol: tcp
+        port: 32075
+      - protocol: tcp
+        port: 32076
+      - protocol: tcp
+        port: 32077
+      - protocol: tcp
+        port: 32078
+      - protocol: tcp
+        port: 32079
+      - protocol: tcp
+        port: 32080
+      - protocol: tcp
+        port: 32081
+      - protocol: tcp
+        port: 32082
+      - protocol: tcp
+        port: 32083
+      - protocol: tcp
+        port: 32084
+      - protocol: tcp
+        port: 32085
+      - protocol: tcp
+        port: 32086
+      - protocol: tcp
+        port: 32087
+      - protocol: tcp
+        port: 32088
+      - protocol: tcp
+        port: 32089
+      - protocol: tcp
+        port: 32090
+      - protocol: tcp
+        port: 32091
+      - protocol: tcp
+        port: 32092
+      - protocol: tcp
+        port: 32093
+      - protocol: tcp
+        port: 32094
+      - protocol: tcp
+        port: 32095
+      - protocol: tcp
+        port: 32096
+      - protocol: tcp
+        port: 32097
+      - protocol: tcp
+        port: 32098
+      - protocol: tcp
+        port: 32099
+      - protocol: tcp
+        port: 32100
+      - protocol: tcp
+        port: 32101
+      - protocol: tcp
+        port: 32102
+      - protocol: tcp
+        port: 32103
+      - protocol: tcp
+        port: 32104
+      - protocol: tcp
+        port: 32105
+      - protocol: tcp
+        port: 32106
+      - protocol: tcp
+        port: 32107
+      - protocol: tcp
+        port: 32108
+      - protocol: tcp
+        port: 32109
+      - protocol: tcp
+        port: 32110
+      - protocol: tcp
+        port: 32111
+      - protocol: tcp
+        port: 32112
+      - protocol: tcp
+        port: 32113
+      - protocol: tcp
+        port: 32114
+      - protocol: tcp
+        port: 32115
+      - protocol: tcp
+        port: 32116
+      - protocol: tcp
+        port: 32117
+      - protocol: tcp
+        port: 32118
+      - protocol: tcp
+        port: 32119
+      - protocol: tcp
+        port: 32120
+      - protocol: tcp
+        port: 32121
+      - protocol: tcp
+        port: 32122
+      - protocol: tcp
+        port: 32123
+      - protocol: tcp
+        port: 32124
+      - protocol: tcp
+        port: 32125
+      - protocol: tcp
+        port: 32126
+      - protocol: tcp
+        port: 32127
+      - protocol: tcp
+        port: 32128
+      - protocol: tcp
+        port: 32129
+      - protocol: tcp
+        port: 32130
+      - protocol: tcp
+        port: 32131
+      - protocol: tcp
+        port: 32132
+      - protocol: tcp
+        port: 32133
+      - protocol: tcp
+        port: 32134
+      - protocol: tcp
+        port: 32135
+      - protocol: tcp
+        port: 32136
+      - protocol: tcp
+        port: 32137
+      - protocol: tcp
+        port: 32138
+      - protocol: tcp
+        port: 32139
+      - protocol: tcp
+        port: 32140
+      - protocol: tcp
+        port: 32141
+      - protocol: tcp
+        port: 32142
+      - protocol: tcp
+        port: 32143
+      - protocol: tcp
+        port: 32144
+      - protocol: tcp
+        port: 32145
+      - protocol: tcp
+        port: 32146
+      - protocol: tcp
+        port: 32147
+      - protocol: tcp
+        port: 32148
+      - protocol: tcp
+        port: 32149
+      - protocol: tcp
+        port: 32150
+      - protocol: tcp
+        port: 32151
+      - protocol: tcp
+        port: 32152
+      - protocol: tcp
+        port: 32153
+      - protocol: tcp
+        port: 32154
+      - protocol: tcp
+        port: 32155
+      - protocol: tcp
+        port: 32156
+      - protocol: tcp
+        port: 32157
+      - protocol: tcp
+        port: 32158
+      - protocol: tcp
+        port: 32159
+      - protocol: tcp
+        port: 32160
+      - protocol: tcp
+        port: 32161
+      - protocol: tcp
+        port: 32162
+      - protocol: tcp
+        port: 32163
+      - protocol: tcp
+        port: 32164
+      - protocol: tcp
+        port: 32165
+      - protocol: tcp
+        port: 32166
+      - protocol: tcp
+        port: 32167
+      - protocol: tcp
+        port: 32168
+      - protocol: tcp
+        port: 32169
+      - protocol: tcp
+        port: 32170
+      - protocol: tcp
+        port: 32171
+      - protocol: tcp
+        port: 32172
+      - protocol: tcp
+        port: 32173
+      - protocol: tcp
+        port: 32174
+      - protocol: tcp
+        port: 32175
+      - protocol: tcp
+        port: 32176
+      - protocol: tcp
+        port: 32177
+      - protocol: tcp
+        port: 32178
+      - protocol: tcp
+        port: 32179
+      - protocol: tcp
+        port: 32180
+      - protocol: tcp
+        port: 32181
+      - protocol: tcp
+        port: 32182
+      - protocol: tcp
+        port: 32183
+      - protocol: tcp
+        port: 32184
+      - protocol: tcp
+        port: 32185
+      - protocol: tcp
+        port: 32186
+      - protocol: tcp
+        port: 32187
+      - protocol: tcp
+        port: 32188
+      - protocol: tcp
+        port: 32189
+      - protocol: tcp
+        port: 32190
+      - protocol: tcp
+        port: 32191
+      - protocol: tcp
+        port: 32192
+      - protocol: tcp
+        port: 32193
+      - protocol: tcp
+        port: 32194
+      - protocol: tcp
+        port: 32195
+      - protocol: tcp
+        port: 32196
+      - protocol: tcp
+        port: 32197
+      - protocol: tcp
+        port: 32198
+      - protocol: tcp
+        port: 32199
+      - protocol: tcp
+        port: 32200
+      - protocol: tcp
+        port: 32201
+      - protocol: tcp
+        port: 32202
+      - protocol: tcp
+        port: 32203
+      - protocol: tcp
+        port: 32204
+      - protocol: tcp
+        port: 32205
+      - protocol: tcp
+        port: 32206
+      - protocol: tcp
+        port: 32207
+      - protocol: tcp
+        port: 32208
+      - protocol: tcp
+        port: 32209
+      - protocol: tcp
+        port: 32210
+      - protocol: tcp
+        port: 32211
+      - protocol: tcp
+        port: 32212
+      - protocol: tcp
+        port: 32213
+      - protocol: tcp
+        port: 32214
+      - protocol: tcp
+        port: 32215
+      - protocol: tcp
+        port: 32216
+      - protocol: tcp
+        port: 32217
+      - protocol: tcp
+        port: 32218
+      - protocol: tcp
+        port: 32219
+      - protocol: tcp
+        port: 32220
+      - protocol: tcp
+        port: 32221
+      - protocol: tcp
+        port: 32222
+      - protocol: tcp
+        port: 32223
+      - protocol: tcp
+        port: 32224
+      - protocol: tcp
+        port: 32225
+      - protocol: tcp
+        port: 32226
+      - protocol: tcp
+        port: 32227
+      - protocol: tcp
+        port: 32228
+      - protocol: tcp
+        port: 32229
+      - protocol: tcp
+        port: 32230
+      - protocol: tcp
+        port: 32231
+      - protocol: tcp
+        port: 32232
+      - protocol: tcp
+        port: 32233
+      - protocol: tcp
+        port: 32234
+      - protocol: tcp
+        port: 32235
+      - protocol: tcp
+        port: 32236
+      - protocol: tcp
+        port: 32237
+      - protocol: tcp
+        port: 32238
+      - protocol: tcp
+        port: 32239
+      - protocol: tcp
+        port: 32240
+      - protocol: tcp
+        port: 32241
+      - protocol: tcp
+        port: 32242
+      - protocol: tcp
+        port: 32243
+      - protocol: tcp
+        port: 32244
+      - protocol: tcp
+        port: 32245
+      - protocol: tcp
+        port: 32246
+      - protocol: tcp
+        port: 32247
+      - protocol: tcp
+        port: 32248
+      - protocol: tcp
+        port: 32249
+      - protocol: tcp
+        port: 32250
+      - protocol: tcp
+        port: 32251
+      - protocol: tcp
+        port: 32252
+      - protocol: tcp
+        port: 32253
+      - protocol: tcp
+        port: 32254
+      - protocol: tcp
+        port: 32255
+      - protocol: tcp
+        port: 32256
+      - protocol: tcp
+        port: 32257
+      - protocol: tcp
+        port: 32258
+      - protocol: tcp
+        port: 32259
+      - protocol: tcp
+        port: 32260
+      - protocol: tcp
+        port: 32261
+      - protocol: tcp
+        port: 32262
+      - protocol: tcp
+        port: 32263
+      - protocol: tcp
+        port: 32264
+      - protocol: tcp
+        port: 32265
+      - protocol: tcp
+        port: 32266
+      - protocol: tcp
+        port: 32267
+      - protocol: tcp
+        port: 32268
+      - protocol: tcp
+        port: 32269
+      - protocol: tcp
+        port: 32270
+      - protocol: tcp
+        port: 32271
+      - protocol: tcp
+        port: 32272
+      - protocol: tcp
+        port: 32273
+      - protocol: tcp
+        port: 32274
+      - protocol: tcp
+        port: 32275
+      - protocol: tcp
+        port: 32276
+      - protocol: tcp
+        port: 32277
+      - protocol: tcp
+        port: 32278
+      - protocol: tcp
+        port: 32279
+      - protocol: tcp
+        port: 32280
+      - protocol: tcp
+        port: 32281
+      - protocol: tcp
+        port: 32282
+      - protocol: tcp
+        port: 32283
+      - protocol: tcp
+        port: 32284
+      - protocol: tcp
+        port: 32285
+      - protocol: tcp
+        port: 32286
+      - protocol: tcp
+        port: 32287
+      - protocol: tcp
+        port: 32288
+      - protocol: tcp
+        port: 32289
+      - protocol: tcp
+        port: 32290
+      - protocol: tcp
+        port: 32291
+      - protocol: tcp
+        port: 32292
+      - protocol: tcp
+        port: 32293
+      - protocol: tcp
+        port: 32294
+      - protocol: tcp
+        port: 32295
+      - protocol: tcp
+        port: 32296
+      - protocol: tcp
+        port: 32297
+      - protocol: tcp
+        port: 32298
+      - protocol: tcp
+        port: 32299
+      - protocol: tcp
+        port: 32300
+      resources:
+        requests:
+          cpu: 4.0
+          memoryInGB: 16
+      volumeMounts:
+      - mountPath: /opt/HelpSystems/GoAnywhere/config/
+        name: config
+      - mountPath: /opt/HelpSystems/GoAnywhere/userdata/
+        name: userdata
+  osType: Linux
+  restartPolicy: Always
+  ipAddress:
+    type: Public
+    ports:
+      - protocol: tcp
+        port: 8000
+      - protocol: tcp
+        port: 8005
+      - protocol: tcp
+        port: 8009
+      - protocol: tcp
+        port: 8001
+      - protocol: tcp
+        port: 8006
+      - protocol: tcp
+        port: 8010
+      - protocol: tcp
+        port: 443
+      - protocol: tcp
+        port: 21
+      - protocol: tcp
+        port: 990
+      - protocol: tcp
+        port: 22
+      - protocol: tcp
+        port: 32001
+      - protocol: tcp
+        port: 32002
+      - protocol: tcp
+        port: 32003
+      - protocol: tcp
+        port: 32004
+      - protocol: tcp
+        port: 32005
+      - protocol: tcp
+        port: 32006
+      - protocol: tcp
+        port: 32007
+      - protocol: tcp
+        port: 32008
+      - protocol: tcp
+        port: 32009
+      - protocol: tcp
+        port: 32010
+      - protocol: tcp
+        port: 32011
+      - protocol: tcp
+        port: 32012
+      - protocol: tcp
+        port: 32013
+      - protocol: tcp
+        port: 32014
+      - protocol: tcp
+        port: 32015
+      - protocol: tcp
+        port: 32016
+      - protocol: tcp
+        port: 32017
+      - protocol: tcp
+        port: 32018
+      - protocol: tcp
+        port: 32019
+      - protocol: tcp
+        port: 32020
+      - protocol: tcp
+        port: 32021
+      - protocol: tcp
+        port: 32022
+      - protocol: tcp
+        port: 32023
+      - protocol: tcp
+        port: 32024
+      - protocol: tcp
+        port: 32025
+      - protocol: tcp
+        port: 32026
+      - protocol: tcp
+        port: 32027
+      - protocol: tcp
+        port: 32028
+      - protocol: tcp
+        port: 32029
+      - protocol: tcp
+        port: 32030
+      - protocol: tcp
+        port: 32031
+      - protocol: tcp
+        port: 32032
+      - protocol: tcp
+        port: 32033
+      - protocol: tcp
+        port: 32034
+      - protocol: tcp
+        port: 32035
+      - protocol: tcp
+        port: 32036
+      - protocol: tcp
+        port: 32037
+      - protocol: tcp
+        port: 32038
+      - protocol: tcp
+        port: 32039
+      - protocol: tcp
+        port: 32040
+      - protocol: tcp
+        port: 32041
+      - protocol: tcp
+        port: 32042
+      - protocol: tcp
+        port: 32043
+      - protocol: tcp
+        port: 32044
+      - protocol: tcp
+        port: 32045
+      - protocol: tcp
+        port: 32046
+      - protocol: tcp
+        port: 32047
+      - protocol: tcp
+        port: 32048
+      - protocol: tcp
+        port: 32049
+      - protocol: tcp
+        port: 32050
+      - protocol: tcp
+        port: 32051
+      - protocol: tcp
+        port: 32052
+      - protocol: tcp
+        port: 32053
+      - protocol: tcp
+        port: 32054
+      - protocol: tcp
+        port: 32055
+      - protocol: tcp
+        port: 32056
+      - protocol: tcp
+        port: 32057
+      - protocol: tcp
+        port: 32058
+      - protocol: tcp
+        port: 32059
+      - protocol: tcp
+        port: 32060
+      - protocol: tcp
+        port: 32061
+      - protocol: tcp
+        port: 32062
+      - protocol: tcp
+        port: 32063
+      - protocol: tcp
+        port: 32064
+      - protocol: tcp
+        port: 32065
+      - protocol: tcp
+        port: 32066
+      - protocol: tcp
+        port: 32067
+      - protocol: tcp
+        port: 32068
+      - protocol: tcp
+        port: 32069
+      - protocol: tcp
+        port: 32070
+      - protocol: tcp
+        port: 32071
+      - protocol: tcp
+        port: 32072
+      - protocol: tcp
+        port: 32073
+      - protocol: tcp
+        port: 32074
+      - protocol: tcp
+        port: 32075
+      - protocol: tcp
+        port: 32076
+      - protocol: tcp
+        port: 32077
+      - protocol: tcp
+        port: 32078
+      - protocol: tcp
+        port: 32079
+      - protocol: tcp
+        port: 32080
+      - protocol: tcp
+        port: 32081
+      - protocol: tcp
+        port: 32082
+      - protocol: tcp
+        port: 32083
+      - protocol: tcp
+        port: 32084
+      - protocol: tcp
+        port: 32085
+      - protocol: tcp
+        port: 32086
+      - protocol: tcp
+        port: 32087
+      - protocol: tcp
+        port: 32088
+      - protocol: tcp
+        port: 32089
+      - protocol: tcp
+        port: 32090
+      - protocol: tcp
+        port: 32091
+      - protocol: tcp
+        port: 32092
+      - protocol: tcp
+        port: 32093
+      - protocol: tcp
+        port: 32094
+      - protocol: tcp
+        port: 32095
+      - protocol: tcp
+        port: 32096
+      - protocol: tcp
+        port: 32097
+      - protocol: tcp
+        port: 32098
+      - protocol: tcp
+        port: 32099
+      - protocol: tcp
+        port: 32100
+      - protocol: tcp
+        port: 32101
+      - protocol: tcp
+        port: 32102
+      - protocol: tcp
+        port: 32103
+      - protocol: tcp
+        port: 32104
+      - protocol: tcp
+        port: 32105
+      - protocol: tcp
+        port: 32106
+      - protocol: tcp
+        port: 32107
+      - protocol: tcp
+        port: 32108
+      - protocol: tcp
+        port: 32109
+      - protocol: tcp
+        port: 32110
+      - protocol: tcp
+        port: 32111
+      - protocol: tcp
+        port: 32112
+      - protocol: tcp
+        port: 32113
+      - protocol: tcp
+        port: 32114
+      - protocol: tcp
+        port: 32115
+      - protocol: tcp
+        port: 32116
+      - protocol: tcp
+        port: 32117
+      - protocol: tcp
+        port: 32118
+      - protocol: tcp
+        port: 32119
+      - protocol: tcp
+        port: 32120
+      - protocol: tcp
+        port: 32121
+      - protocol: tcp
+        port: 32122
+      - protocol: tcp
+        port: 32123
+      - protocol: tcp
+        port: 32124
+      - protocol: tcp
+        port: 32125
+      - protocol: tcp
+        port: 32126
+      - protocol: tcp
+        port: 32127
+      - protocol: tcp
+        port: 32128
+      - protocol: tcp
+        port: 32129
+      - protocol: tcp
+        port: 32130
+      - protocol: tcp
+        port: 32131
+      - protocol: tcp
+        port: 32132
+      - protocol: tcp
+        port: 32133
+      - protocol: tcp
+        port: 32134
+      - protocol: tcp
+        port: 32135
+      - protocol: tcp
+        port: 32136
+      - protocol: tcp
+        port: 32137
+      - protocol: tcp
+        port: 32138
+      - protocol: tcp
+        port: 32139
+      - protocol: tcp
+        port: 32140
+      - protocol: tcp
+        port: 32141
+      - protocol: tcp
+        port: 32142
+      - protocol: tcp
+        port: 32143
+      - protocol: tcp
+        port: 32144
+      - protocol: tcp
+        port: 32145
+      - protocol: tcp
+        port: 32146
+      - protocol: tcp
+        port: 32147
+      - protocol: tcp
+        port: 32148
+      - protocol: tcp
+        port: 32149
+      - protocol: tcp
+        port: 32150
+      - protocol: tcp
+        port: 32151
+      - protocol: tcp
+        port: 32152
+      - protocol: tcp
+        port: 32153
+      - protocol: tcp
+        port: 32154
+      - protocol: tcp
+        port: 32155
+      - protocol: tcp
+        port: 32156
+      - protocol: tcp
+        port: 32157
+      - protocol: tcp
+        port: 32158
+      - protocol: tcp
+        port: 32159
+      - protocol: tcp
+        port: 32160
+      - protocol: tcp
+        port: 32161
+      - protocol: tcp
+        port: 32162
+      - protocol: tcp
+        port: 32163
+      - protocol: tcp
+        port: 32164
+      - protocol: tcp
+        port: 32165
+      - protocol: tcp
+        port: 32166
+      - protocol: tcp
+        port: 32167
+      - protocol: tcp
+        port: 32168
+      - protocol: tcp
+        port: 32169
+      - protocol: tcp
+        port: 32170
+      - protocol: tcp
+        port: 32171
+      - protocol: tcp
+        port: 32172
+      - protocol: tcp
+        port: 32173
+      - protocol: tcp
+        port: 32174
+      - protocol: tcp
+        port: 32175
+      - protocol: tcp
+        port: 32176
+      - protocol: tcp
+        port: 32177
+      - protocol: tcp
+        port: 32178
+      - protocol: tcp
+        port: 32179
+      - protocol: tcp
+        port: 32180
+      - protocol: tcp
+        port: 32181
+      - protocol: tcp
+        port: 32182
+      - protocol: tcp
+        port: 32183
+      - protocol: tcp
+        port: 32184
+      - protocol: tcp
+        port: 32185
+      - protocol: tcp
+        port: 32186
+      - protocol: tcp
+        port: 32187
+      - protocol: tcp
+        port: 32188
+      - protocol: tcp
+        port: 32189
+      - protocol: tcp
+        port: 32190
+      - protocol: tcp
+        port: 32191
+      - protocol: tcp
+        port: 32192
+      - protocol: tcp
+        port: 32193
+      - protocol: tcp
+        port: 32194
+      - protocol: tcp
+        port: 32195
+      - protocol: tcp
+        port: 32196
+      - protocol: tcp
+        port: 32197
+      - protocol: tcp
+        port: 32198
+      - protocol: tcp
+        port: 32199
+      - protocol: tcp
+        port: 32200
+      - protocol: tcp
+        port: 32201
+      - protocol: tcp
+        port: 32202
+      - protocol: tcp
+        port: 32203
+      - protocol: tcp
+        port: 32204
+      - protocol: tcp
+        port: 32205
+      - protocol: tcp
+        port: 32206
+      - protocol: tcp
+        port: 32207
+      - protocol: tcp
+        port: 32208
+      - protocol: tcp
+        port: 32209
+      - protocol: tcp
+        port: 32210
+      - protocol: tcp
+        port: 32211
+      - protocol: tcp
+        port: 32212
+      - protocol: tcp
+        port: 32213
+      - protocol: tcp
+        port: 32214
+      - protocol: tcp
+        port: 32215
+      - protocol: tcp
+        port: 32216
+      - protocol: tcp
+        port: 32217
+      - protocol: tcp
+        port: 32218
+      - protocol: tcp
+        port: 32219
+      - protocol: tcp
+        port: 32220
+      - protocol: tcp
+        port: 32221
+      - protocol: tcp
+        port: 32222
+      - protocol: tcp
+        port: 32223
+      - protocol: tcp
+        port: 32224
+      - protocol: tcp
+        port: 32225
+      - protocol: tcp
+        port: 32226
+      - protocol: tcp
+        port: 32227
+      - protocol: tcp
+        port: 32228
+      - protocol: tcp
+        port: 32229
+      - protocol: tcp
+        port: 32230
+      - protocol: tcp
+        port: 32231
+      - protocol: tcp
+        port: 32232
+      - protocol: tcp
+        port: 32233
+      - protocol: tcp
+        port: 32234
+      - protocol: tcp
+        port: 32235
+      - protocol: tcp
+        port: 32236
+      - protocol: tcp
+        port: 32237
+      - protocol: tcp
+        port: 32238
+      - protocol: tcp
+        port: 32239
+      - protocol: tcp
+        port: 32240
+      - protocol: tcp
+        port: 32241
+      - protocol: tcp
+        port: 32242
+      - protocol: tcp
+        port: 32243
+      - protocol: tcp
+        port: 32244
+      - protocol: tcp
+        port: 32245
+      - protocol: tcp
+        port: 32246
+      - protocol: tcp
+        port: 32247
+      - protocol: tcp
+        port: 32248
+      - protocol: tcp
+        port: 32249
+      - protocol: tcp
+        port: 32250
+      - protocol: tcp
+        port: 32251
+      - protocol: tcp
+        port: 32252
+      - protocol: tcp
+        port: 32253
+      - protocol: tcp
+        port: 32254
+      - protocol: tcp
+        port: 32255
+      - protocol: tcp
+        port: 32256
+      - protocol: tcp
+        port: 32257
+      - protocol: tcp
+        port: 32258
+      - protocol: tcp
+        port: 32259
+      - protocol: tcp
+        port: 32260
+      - protocol: tcp
+        port: 32261
+      - protocol: tcp
+        port: 32262
+      - protocol: tcp
+        port: 32263
+      - protocol: tcp
+        port: 32264
+      - protocol: tcp
+        port: 32265
+      - protocol: tcp
+        port: 32266
+      - protocol: tcp
+        port: 32267
+      - protocol: tcp
+        port: 32268
+      - protocol: tcp
+        port: 32269
+      - protocol: tcp
+        port: 32270
+      - protocol: tcp
+        port: 32271
+      - protocol: tcp
+        port: 32272
+      - protocol: tcp
+        port: 32273
+      - protocol: tcp
+        port: 32274
+      - protocol: tcp
+        port: 32275
+      - protocol: tcp
+        port: 32276
+      - protocol: tcp
+        port: 32277
+      - protocol: tcp
+        port: 32278
+      - protocol: tcp
+        port: 32279
+      - protocol: tcp
+        port: 32280
+      - protocol: tcp
+        port: 32281
+      - protocol: tcp
+        port: 32282
+      - protocol: tcp
+        port: 32283
+      - protocol: tcp
+        port: 32284
+      - protocol: tcp
+        port: 32285
+      - protocol: tcp
+        port: 32286
+      - protocol: tcp
+        port: 32287
+      - protocol: tcp
+        port: 32288
+      - protocol: tcp
+        port: 32289
+      - protocol: tcp
+        port: 32290
+      - protocol: tcp
+        port: 32291
+      - protocol: tcp
+        port: 32292
+      - protocol: tcp
+        port: 32293
+      - protocol: tcp
+        port: 32294
+      - protocol: tcp
+        port: 32295
+      - protocol: tcp
+        port: 32296
+      - protocol: tcp
+        port: 32297
+      - protocol: tcp
+        port: 32298
+      - protocol: tcp
+        port: 32299
+      - protocol: tcp
+        port: 32300
+  volumes:
+  - name: config
+    azureFile:
+      sharename: config
+      storageAccountName: sftprepo0001
+      storageAccountKey: eT9CqhRtyLGxxWjuZ8F5R4E+vZw0gRiguPlyLRudwZC4slGAaX0aHmRUmeyeC+ThucMwn1ktTgrQHcfbfCNrLg==
+  - name: userdata
+    azureFile:
+      sharename: userdata
+      storageAccountName: sftprepo0001
+      storageAccountKey: eT9CqhRtyLGxxWjuZ8F5R4E+vZw0gRiguPlyLRudwZC4slGAaX0aHmRUmeyeC+ThucMwn1ktTgrQHcfbfCNrLg==
+tags: null
+type: Microsoft.ContainerInstance/containerGroups
